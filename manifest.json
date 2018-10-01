@@ -1,0 +1,36 @@
+{
+    "gcm_sender_id": "103953800507",
+    "name": "OLX-Pakistan",
+    "short_name": "OLX",
+    "icons": [
+        {
+            "src": "images/olx.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "images/olx.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "images/olx.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "images/olx.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/olx.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#BAF51D",
+    "theme_color": "#1EE5F9"
+  }

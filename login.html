@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX-pakistan</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="manifest" href="/manifest.json">     
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="./images/Olx_icon.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBuvoYanfQ5eK-q9v41Z2VWNDtq6ZLu7SY",
+    authDomain: "olx-pakistan-9905f.firebaseapp.com",
+    databaseURL: "https://olx-pakistan-9905f.firebaseio.com",
+    projectId: "olx-pakistan-9905f",
+    storageBucket: "olx-pakistan-9905f.appspot.com",
+    messagingSenderId: "856774290342"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- font_awesome link -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container  header" >
+        <div class="row">
+                <div class="col-sm-1">
+                      </div>
+                      
+          <div class="col-sm-2">
+            <img src="./images/in.jpg" alt="icon" style="width:150px;height:150px;">
+          </div>
+          <div class="col-sm-1">
+            </div>
+            
+          <div class="col-sm-5" style="margin-top: 40px;padding-top: 10px">
+            <!-- <h1>OLX PAKISTAN</h1>         -->
+            <h3>Pakistan's Largest Marketplace...</h3>
+            
+          </div>
+          <div class="col-sm-3" style="margin-top: 40px;">
+                 <!-- <button  class="button" type="button" onclick="location = './SignUp.html'">SignUp</button> -->
+                
+                <button   class="button"  type="button" onclick="location = './Index.html'">Singup</button>
+                
+            </div>
+        </div>
+      </div>
+
+
+<!-- body  -->
+
+<!-- <h1 class="">SignUp</h1> -->
+
+<div id="main-container" class="main-container back ">
+    <!-- <div class="col-sm-2  " ></div>     -->
+        <!-- <div class="col-sm-8  " > -->
+        <div class="flex-box ">
+            <h2 class="input-fields">login Here</h2>
+            <label class="input-fields">
+                <input type="email" name="email"  placeholder="Enter email" id="email" onkeyup="emailValidate()" />
+               <br> <span id="errEmail"></span>
+            </label>
+            <label class="input-fields">
+                <input type="password" name="password" placeholder="Enter password" id="password" onkeyup="passValidate()" />
+                <br> <span id="errPass"></span>
+            </label>
+            
+            
+            <br>
+            <center>
+
+                <label>
+                    
+                    <button onClick="login()" class="button">Log in</button>
+                    
+                </label>
+                <div id="error"></div>
+            </center>
+        </div>
+<!-- </div> -->
+<!-- <div class="col-sm-2  " ></div>    -->
+    </div>
+
+
+<!-- fotter -->
+
+<!-- Footer -->
+
+<footer id="fotter" class="page-footer font-small blue pt-4 mt-4">
+
+
+    <!-- Footer Elements -->
+    <div class="container">
+    
+            <!--Grid row-->
+            <div class="row">
+      
+              <!--Grid column-->
+              <div class="col-md-6 mb-4">
+      
+                <!-- Form -->
+                <form class="form-inline">
+                  <!-- <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                  <i class="fa fa-search" aria-hidden="true"></i> -->
+                </form>
+                <!-- Form -->
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-md-6 mb-4">
+      
+                <form class="input-group">
+                  <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-sm btn-outline-white" type="button">Sign up</button>
+                  </div>
+                </form>
+      
+              </div>
+              <!--Grid column-->
+      
+            </div>
+            <!--Grid row-->
+      
+          </div>
+          <!-- Footer Elements -->
+      
+          <!-- Copyright -->
+          <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+          </div> -->
+          <!-- Copyright -->
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+    
+          <!-- Grid row -->
+          <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+    
+              <!-- Content -->
+              <h5 class="text-uppercase">OLX-PAKISTAN</h5>
+              <p   id="fotterIntro">OLX’s  Progressive  Web  App  engaging  push  notifications  –just  like  a  native  app  –  and  offered  users  an  immersive,  app-like  experience  on  their  mobile  site. One  of  the  largest  online  destinations  for  classified  ads  OLX  provides  communities  in  high-growth  markets  with  vibrant  online  marketplaces.  They  connect  local  people  so  they  can  buy,  sell,  or  exchange  used  goods  and  services,  making  it  fast  and  easy  for  anyone  to  post  a  listing  on  the  web.  23%  less  time  until  page  is  interactive  80%  lower  bounce  rates  146%  higher  CTR  on  Ads  250%  more  re-engagement  </p>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none pb-3">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+    
+                <!-- Links -->
+                <!-- <h5 class="text-uppercase">Links</h5> -->
+    
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Locations Map</a>
+                  </li>
+                  <li>
+                    <a href="#!">Popular searches</a>
+                  </li>
+                  <li>
+                    <a href="#!">Archive</a>
+                  </li>
+                  <li>
+                    <a href="#!">Sitemap</a>
+                  </li>
+                </ul>
+    
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+    
+                <!-- Links -->
+                <!-- <h5 class="text-uppercase">Links</h5> -->
+    
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Terms of Use</a>
+                  </li>
+                  <li>
+                    <a href="#!">Help & Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#!">Who we are</a>
+                  </li>
+                  <li>
+                    <a href="#!">Join OLX</a>
+                  </li>
+                </ul>
+    
+              </div>
+              <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+        </div> -->
+        <!-- Copyright -->
+    
+      </footer>
+      <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

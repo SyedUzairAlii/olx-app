@@ -1,0 +1,231 @@
+/* body{
+    background-image: url("./images/OLX\ Logo\ Wallpaper.jpg");  
+    background-repeat: no-repeat;
+} */
+
+
+
+/* header nav css */
+
+.header{
+    background-image: url("./images/background.png");
+}
+
+.button {
+    background-color: rgb(141, 228, 144); /* Green */
+    border: none;
+    color: rgb(3, 3, 3);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+}
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+/* fotter css */
+#fotter{
+    background-image: url("./images/background.png");
+
+}
+#fotterIntro{
+    font-size: 12px;
+    color: rgb(17, 103, 160)
+}
+
+.back{
+    background-image: url("./images/ssd.jpg");
+}
+label{
+    width: 100%;
+    display: flex;
+    flex-basis: 100%
+}
+
+
+
+
+/* home body css */
+.homebd{
+    margin-top: 10px;
+}
+
+.subbtn
+{
+    background-color: rgb(240, 106, 44); /* Green */
+    border: none;
+    color: rgb(247, 240, 240);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 4px;
+
+}
+.flags{
+    background-color: rgb(248, 52, 38); /* Green */
+    border: none;
+    color: rgb(247, 240, 240);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.2s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 2px;
+}
+
+.inputsubmit {
+    opacity: 1;
+    flex-basis: 100%;
+    /* border: 1px solid blue; */
+    padding: 0.9em 0em 0.6em 0em;
+    color: rgb(14, 19, 87);
+    /* text-shadow: 2px 2px rgb(209, 171, 171); */
+    
+}
+
+
+.inputsubmit input{
+    width: 400px;
+    padding: 5px;
+    /* border-bottom: 3px solid rgb(255, 254, 254); */
+    border-top: none;
+    transition: 1s;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    font-weight: bold;
+    /* color: rgb(236, 20, 20); */
+    
+    background: none;
+}
+
+.data-home{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+border: 1px solid black;
+justify-content: center;
+}
+
+.ad-Image{
+    border: 1px solid rgb(229, 243, 150);
+    padding-top: 2px;
+}
+.flg{
+    margin-left: 2em;
+}
+
+/* chat box css */
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 250px;
+}
+.data-chat{
+    display: flex;
+   
+justify-content: flex-end;
+}
+
+
+.panel-heading{
+    color: aliceblue;
+    background: rgb(64, 149, 247);
+}
+
+/*  chat */
+.chat{
+    color: #4CAF50
+}
+
+
+.messages2{
+    border: 1px solid rgb(255, 0, 106);
+padding: 3px 5px 3px 5px;
+margin: 3px 3px 3px 3px;
+border-radius: 3px;
+width: 200px;
+background-color: #7e7ee61a;
+box-shadow: 1px 1px 3px rgb(159, 214, 108);
+}
+.messages{
+    border: 1px solid rgb(255, 230, 0);
+padding: 3px 5px 3px 5px;
+margin: 3px 3px 3px 3px;
+border-radius: 3px;
+width: 200px;
+background-color: #aeaeb91a;
+box-shadow: 1px 1px 3px rgb(214, 108, 108);
+
+}
+.messageDisplay2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+}
+
+.messageDisplay{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+}
